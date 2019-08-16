@@ -21,7 +21,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
     return gulp.src(['src/assets/scss/*.scss'])
         .pipe(sourcemaps.init())
-        .pipe(sass({ 
+        .pipe(sass({
             outputStyle: 'expanded',
             sourceComments: 'map',
             sourceMap: 'sass',
@@ -74,10 +74,16 @@ gulp.task('watch', ['sass'], function () {
 // Copies image files to dist
 gulp.task('images', function () {
     return gulp.src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
-        .pipe(cache(imagemin ([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5})
+        .pipe(cache(imagemin([
+            imagemin.gifsicle({
+                interlaced: true
+            }),
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            imagemin.optipng({
+                optimizationLevel: 5
+            })
         ]))) // Caching images that ran through imagemin
         .pipe(gulp.dest('dist/assets/img/'));
 });
@@ -107,6 +113,18 @@ gulp.task('scripts', function () {
         .pipe(browserSync.stream());
 });
 
+//
+// Copy Vendors - a utility to copy client-side dependencies into a folder
+//
+gulp.task('copyVendors', function () {
+    gulp.src([
+            './node_modules/*bootstrap-input-spinner/**/*',
+            './node_modules/*slick-carousel/**/*'
+        ])
+        .pipe(gulp.dest('./src/assets/js/vendor/'))
+        .pipe(gulp.dest('./dist/assets/js/vendor/'));
+});
+
 // Cleaning/deleting files no longer being used in dist folder
 gulp.task('clean:dist', function () {
     console.log('Removing old files from dist');
@@ -116,10 +134,10 @@ gulp.task('clean:dist', function () {
 
 // ------------ Build Sequence -------------
 // Simply run 'gulp' in terminal to run local server and watch for changes
-gulp.task('default', ['clean:dist', 'font', 'scripts', 'images', 'compile-html', 'resetPages', 'media', 'watch']);
+gulp.task('default', ['clean:dist', 'font', 'scripts', 'copyVendors', 'images', 'compile-html', 'resetPages', 'media', 'watch']);
 
 // Creates production ready assets in dist folder
 gulp.task('build', function () {
     console.log('Building production ready assets');
-    runSequence('clean:dist', 'sass', ['scripts', 'images', 'font', 'compile-html'])
+    runSequence('clean:dist', 'sass', ['scripts', 'copyVendors', 'images', 'font', 'compile-html'])
 });
