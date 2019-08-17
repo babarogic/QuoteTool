@@ -4,8 +4,6 @@
 
 ## Requirements
 
-To use this template, your computer needs:
-
 -	Node.js (0.12 or greater) Node.js is used to run the build processes. https://nodejs.org/en/download/
 	Test: run ` node -v ` in the terminal
 -	Npm (Node comes with npm installed so you should have a version of npm.) Used to manage development dependencies.
@@ -15,8 +13,6 @@ To use this template, your computer needs:
 -	Gulp – task runner
 	`npm install -g gulp`
 	Test: run `gulp -v ` in the terminal
-
-** Before moving forward, please ensure you have all of the above installed. ** if so, please open a new terminal window or clear your current window and continue to template installation steps below.
 
 
 ## Installing:
@@ -34,7 +30,7 @@ http://localhost:3000
 - `dist/`: Compiled files. Note: Do not modify anything in this directory. Your changes will be overridden every time you run the build command.
 - `node_modules` Front-end dependencies.
 - `src/` Folder contains all of your core, working files—static assets, pages, templates, etc. These assets are compiled to a distribution folder. This is a completely static HTML site.
-- `src/assets/` Sass files, JS files, images, and fonts go here.
+- `src/assets/` Sass files, JS files, images, SVG and fonts go here.
 - `src/data/` External data.
 - `src/layouts/` HTML layouts (templates).
 - `src/pages/` Site pages.
