@@ -21,3 +21,71 @@ span.product {
   margin-bottom: 4px;
   margin-right: .5rem;
 }
+
+span.save {
+  background: url(../../assets/img/svg/save.svg) 0% 0% no-repeat padding-box;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: .5rem;
+}
+
+span.send {
+  background: url(../../assets/img/svg/send.svg) 0% 0% no-repeat padding-box;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: .5rem;
+}
+
+span.arrow-right {
+  background: url(../../assets/img/svg/arrow-right.svg) 0% 0% no-repeat padding-box;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: .5rem;
+}
+
+.arrow-left {
+  background: url(../../assets/img/svg/arrow-left.svg) 0% 0% no-repeat padding-box;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: .5rem;
+}
+
+span.home {
+  background: url(../../assets/img/svg/home.svg) 0% 0% no-repeat padding-box;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+span.next {
+  background: url(../../assets/img/svg/next.svg) 0% 0% no-repeat padding-box;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
