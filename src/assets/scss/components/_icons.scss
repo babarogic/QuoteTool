@@ -49,23 +49,30 @@ span.send {
 span.arrow-right {
   background: url(../../assets/img/svg/arrow-right.svg) 0% 0% no-repeat padding-box;
   background-size: contain;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 45%;
+  right: -3rem;
   cursor: pointer;
   display: inline-block;
   width: 64px;
   height: 64px;
-  vertical-align: middle;
   margin-bottom: 4px;
   margin-right: .5rem;
 }
 
-.arrow-left {
+span.arrow-left {
   background: url(../../assets/img/svg/arrow-left.svg) 0% 0% no-repeat padding-box;
   background-size: contain;
+  position: absolute;
+  z-index: 1;
   cursor: pointer;
-  display: inline-block;
+  display: block;
+  top: 45%;
+  left: -3rem;
   width: 64px;
   height: 64px;
-  vertical-align: middle;
   margin-bottom: 4px;
   margin-right: .5rem;
 }

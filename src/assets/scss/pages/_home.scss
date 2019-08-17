@@ -1,24 +1,3 @@
-.card-title {
-  font-size: 1.25rem;
-}
-
-.card-text {
-  font-size: 14px;
-  line-height: 23px;
-  color: $gray-600 !important;
-}
-
-.category {
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    padding-top: 1rem;
-    border-bottom: 1px solid #000;
-    width: 4rem;
-  }
-}
-
 .wrapper {
   width: 100%;
   padding-top: 20px;

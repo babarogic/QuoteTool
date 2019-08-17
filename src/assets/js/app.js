@@ -8,7 +8,7 @@ $(document).ready(function () {
         breakpoint: 1600,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 1,
           dots: false
         }
       },
@@ -16,7 +16,7 @@ $(document).ready(function () {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           dots: true
         }
       },
@@ -24,7 +24,7 @@ $(document).ready(function () {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           dots: true
         }
       },
@@ -45,4 +45,17 @@ $(document).ready(function () {
   $('[data-cardSelect]').click(function () {
     $(this).parent('[data-cardSelected]').toggleClass('selected');
   });
+
+  $('.trigger-button').click(function(e) {
+    e.stopPropagation();
+    $('.dropdown-toggle').dropdown('toggle');
+  });
+
+  // Show more
+
+  $(".showMore").click(function (e) {
+    e.preventDefault();
+    $(".open4").addClass("hide-team");
+    $(".team-open4").addClass("show-team");
+})
 });
