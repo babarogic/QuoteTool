@@ -3,18 +3,3 @@
   padding-top: 20px;
   text-align: center;
 }
-
-.collapse {
-  display: block !important;
-  height: 0px;
-  overflow: hidden;
-}
-.collapse.in {
-  display: block !important;
-  height: auto !important;
-}
-
-.collapse:not(.show)  {
-  display: block !important;
-  height: 0px;
-  }

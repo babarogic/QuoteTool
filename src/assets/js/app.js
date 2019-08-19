@@ -46,10 +46,6 @@ $(document).ready(function () {
     centerMode: false,
   });
 
-  $('[href="#productOne"]').on('shown.bs.collapse', function (e) {
-    e.stopPropagation();
-    $('.productSection').resize();
-  });
 
   $("input[type='number']").inputSpinner();
 
