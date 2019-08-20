@@ -40,12 +40,6 @@ $(document).ready(function () {
     ]
   });
 
-  $('.productSection').slick({
-    slidesToShow: 4,
-    dots: false,
-    centerMode: false,
-  });
-
 
   $("input[type='number']").inputSpinner();
 

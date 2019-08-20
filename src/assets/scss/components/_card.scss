@@ -52,14 +52,18 @@
   margin-bottom: -1.44rem;
   margin-left: auto !important;
   margin-right: 2rem!important;
+  transition: all .2s ease;
+  &:hover {
+    background-color: #287D7D;
+    transition: all .2s ease;
+  }
   &::after {
     content: '';
-    background: url(../../assets/img/svg/plus.svg) 0% 0% no-repeat padding-box;
+    background: url(../../assets/img/svg/arrow-down.svg) 0% 0% no-repeat padding-box;
     background-size: contain;
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    transform: translate(6px, 6px);
-    background-color: #1E5E5E;
+    width: 28px;
+    height: 28px;
+    transform: translate(4px, 4px);
   }
 }
