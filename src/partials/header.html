@@ -1,2 +1,311 @@
-<nav class="navbar navbar-expand-md bg-light mb-4 border-bottom" style="height: 80px">
+<nav class="navbar bg-light border-bottom position-relative" style="height: 100px !important;">
+
 </nav>
+<nav class="bg-light sticky-top fixed-top border-bottom mb-5 px-4 py-2">
+  <div class="row justify-content-between">
+    <div class="col">
+      <div class="dropdown">
+        <button type="button" class="btn btn-xl btn-primary float-left dropdown-toggle d-none d-md-block"
+          id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+            class="filters"></span>
+          Filters
+        </button>
+
+        <button type="button" class="btn btn-primary float-left dropdown-toggle d-md-none" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="filters"></span>
+        </button>
+
+        <div class="dropdown-menu p-0 m-0 border-0">
+          <form class="">
+            <!--Accordion wrapper-->
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne1">
+                  <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                    aria-controls="collapseOne1">
+                    <h5 class="mb-0">
+                      Categories <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                  data-parent="#accordionEx">
+                  <div class="p-4">
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="categoriesSwitch1">
+                      <label class="custom-control-label" for="categoriesSwitch1">Condition 1</label>
+                    </div>
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="categoriesSwitch2">
+                      <label class="custom-control-label" for="categoriesSwitch2">Condition 2</label>
+                    </div>
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="categoriesSwitch3">
+                      <label class="custom-control-label" for="categoriesSwitch3">Condition 3</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Accordion card -->
+
+              <!-- Accordion card -->
+              <div class="card">
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingTwo2">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                    aria-expanded="false" aria-controls="collapseTwo2">
+                    <h5 class="mb-0">
+                      Filter 1 <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                  data-parent="#accordionEx">
+                </div>
+              </div>
+              <!-- Accordion card -->
+
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree3">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                    aria-expanded="false" aria-controls="collapseThree3">
+                    <h5 class="mb-0">
+                      Filters 2 <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseThree3" class="collapse show" role="tabpanel" aria-labelledby="headingThree3"
+                  data-parent="#accordionEx">
+                  <!-- Material switch -->
+                  <div class="p-4">
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">Condition 1</label>
+                    </div>
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2">Condition 1</label>
+                    </div>
+                    <div class="custom-control custom-switch mb-2">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3">Condition 1</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Accordion card -->
+
+              <!-- Accordion card -->
+              <div class="card">
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree3">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                    aria-expanded="false" aria-controls="collapseThree3">
+                    <h5 class="mb-0">
+                      Filters 3 <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+                    </h5>
+                  </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                  data-parent="#accordionEx">
+                </div>
+              </div>
+              <!-- Accordion card -->
+            </div>
+            <!-- Accordion wrapper -->
+            <div class="dropdown-divider"></div>
+            <button type="reset" class="mb-3 mx-auto btn btn-xl w-100 btn-primary">Reset</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="col justify-content-end">
+      <button type="button" class="btn btn-fixed btn-xl btn-primary float-right dropdown-toggle d-none d-md-block"
+        data-toggle="modal" data-target="#priceModal">
+        Total: <b>$2509</b>
+      </button>
+      <button type="button" class="btn btn-fixed btn-primary float-right dropdown-toggle d-md-none" data-toggle="modal"
+        data-target="#priceModal">
+        Total: <b>$2509</b>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="priceModalTitel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless">
+            <tbody>
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Discount</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tr>
+                <td colspan="5">
+                  <div class="col-12 mb-3 mt-5">
+                    <h4><span class="product"></span>Category 1</h4>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr style="height: .5rem;"></tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr style="height: .5rem;"></tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <div class="col-12 mb-3 mt-5">
+                    <h4><span class="product"></span>Category 1</h4>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr style="height: .5rem;"></tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr style="height: .5rem;"></tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr>
+                <td colspan="5">
+                  <div class="col-12 mb-3 mt-5">
+                    <h4><span class="product"></span>Category 1</h4>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr style="height: .5rem;"></tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+              <tr style="height: .5rem;"></tr>
+              <tr class="table-active">
+                <td>Product</td>
+                <td>5</td>
+                <td>100$</td>
+                <td>10%</td>
+                <td>3200$</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="col-6 float-right pr-0 mr-0">
+            <ul class="list-group mb-2">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>$20</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <div class="container">
+          <div class="row mb-5">
+
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+
+            </div>
+          </div>
+          <div class="row flex justify-content-center">
+            <button type="button" class="mr-3 btn btn-outline-secondary d-none d-md-block"
+              data-dismiss="modal">Close</button>
+            <button type="button" class="mr-3 btn btn-outline-secondary d-md-none" data-dismiss="modal">Close</button>
+
+            <button type="button" class="mr-3 btn btn-lg btn-primary d-none d-md-block"><span class="save"></span>
+              Save</button>
+            <button type="button" class="mr-3 btn btn-primary d-md-none"><span class="save"></span> Save</button>
+
+            <button type="button" class=" btn btn-lg btn-primary d-none d-md-block"><span class="send"></span>
+              Send</button>
+            <button type="button" class=" btn btn-primary d-md-none"><span class="send"></span> Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

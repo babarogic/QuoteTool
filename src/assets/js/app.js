@@ -1,15 +1,19 @@
 $(document).ready(function () {
   $('.carousel').slick({
     slidesToShow: 5,
-    dots: false,
     centerMode: false,
+    focusOnSelect: true,
+    infinite: false,
+    initialSlide: 0,
+    dots: true,
     arrows: true,
     responsive: [{
         breakpoint: 1600,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          dots: false
+          dots: true,
+          initialSlide: 0,
         }
       },
       {
@@ -17,6 +21,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          initialSlide: 0,
           dots: true
         }
       },
@@ -25,16 +30,19 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
+          initialSlide: 0,
+          arrows: false,
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           dots: true,
-          arrows: false
+          arrows: false,
+          initialSlide: 0,
         }
       }
     ]
@@ -51,6 +59,5 @@ $(document).ready(function () {
     e.stopPropagation();
     $('.dropdown-toggle').dropdown('toggle');
   });
-
 
 });
