@@ -119,10 +119,11 @@ gulp.task('scripts', function () {
 gulp.task('copyVendors', function () {
     gulp.src([
             './node_modules/*bootstrap-input-spinner/**/*',
-            './node_modules/*slick-carousel/**/*'
+            './node_modules/*slick-carousel/**/*',
+            './node_modules/*swiper/**/*'
         ])
-        .pipe(gulp.dest('./src/assets/js/vendor/'))
-        .pipe(gulp.dest('./dist/assets/js/vendor/'));
+        .pipe(gulp.dest('./src/assets/vendor/'))
+        .pipe(gulp.dest('./dist/assets/vendor/'));
 });
 
 // Cleaning/deleting files no longer being used in dist folder

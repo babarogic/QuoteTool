@@ -9,8 +9,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Quote Tool</title>
 	<link rel="stylesheet" href="{{root}}assets/css/app.css">
-	<link rel="stylesheet" href="{{root}}assets/js/vendor/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="{{root}}assets/js/vendor/slick-carousel/slick/slick-theme.css">
+	<!-- <link rel="stylesheet" href="{{root}}assets/js/vendor/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="{{root}}assets/js/vendor/slick-carousel/slick/slick-theme.css"> -->
+	<link rel="stylesheet" href="{{root}}assets/vendor/swiper/dist/css/swiper.css">
 
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +20,7 @@
 <body>
 	{{> header}}
 
-	<main role="main" class="container-fluid px-lg-5 px-md-3 px-sm-1 px-1 mb-5">
+	<main role="main" class="container-fluid px-lg-5 px-md-5 px-sm-2 px-2 mb-5">
 		{{> body}}
 	</main>
 	{{> mobile-nav}}
@@ -28,8 +29,39 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="{{root}}assets/js/vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
-	<script type="text/javascript" src="{{root}}assets/js/vendor/slick-carousel/slick/slick.js"></script>
+	<script type="text/javascript" src="{{root}}assets/vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+	<!-- <script type="text/javascript" src="{{root}}assets/js/vendor/slick-carousel/slick/slick.js"></script> -->
+	<script type="text/javascript" src="{{root}}assets/vendor/swiper/dist/js/swiper.min.js"></script>
 	<script src="{{root}}assets/js/app.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 5,
+			freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+			},
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+			breakpoints: {
+				1600: {
+					slidesPerView: 4,
+				},
+				1200: {
+					slidesPerView: 3,
+				},
+				992: {
+					slidesPerView: 2,
+					navigation: false,
+				},
+				768: {
+					slidesPerView: 2,
+					navigation: false,
+				}
+			}
+    });
+		</script>
 </body>
 </html>
