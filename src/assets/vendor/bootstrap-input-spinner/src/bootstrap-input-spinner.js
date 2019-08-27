@@ -25,8 +25,9 @@
             incrementButton: "<strong>+</strong>", // ..
             groupClass: "", // css class of the resulting input-group
             buttonsClass: "btn-primary",
-            buttonsWidth: "2.5rem",
+            buttonsWidth: "2.125rem",
             textAlign: "center",
+            maxWidth: "50px",
             autoDelay: 500, // ms holding before auto value change
             autoInterval: 100, // speed of auto value change
             boostThreshold: 10, // boost after these steps
@@ -41,7 +42,7 @@
             '<div class="input-group-prepend">' +
             '<button style="min-width: ' + config.buttonsWidth + '" class="btn btn-decrement ' + config.buttonsClass + '" type="button">' + config.decrementButton + '</button>' +
             '</div>' +
-            '<input type="text" style="text-align: ' + config.textAlign + '" class="form-control"/>' +
+            '<input type="text" style="text-align: ' + config.textAlign + ';max-width: ' + config.maxWidth + '" class="form-control"/>' +
             '<div class="input-group-append">' +
             '<button style="min-width: ' + config.buttonsWidth + '" class="btn btn-increment ' + config.buttonsClass + '" type="button">' + config.incrementButton + '</button>' +
             '</div>' +

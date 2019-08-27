@@ -36,8 +36,35 @@
   }
 }
 
+.input-group-sm>.form-control:not(textarea) {
+  @include media-breakpoint-down(md) {
+    height: 24px !important;
+  }
+}
+
+.btn-decrement {
+  @include media-breakpoint-down(md) {
+    padding: 0 !important;
+    height: 24px;
+  }
+}
+
+.btn-increment {
+  @include media-breakpoint-down(md) {
+    padding: 0 !important;
+    height: 24px;
+  }
+}
+
+.input-group-sm {
+  justify-content: flex-end;
+  @include media-breakpoint-down(sm) {
+    justify-content: flex-start;
+  }
+}
+
 .btn-floating {
-  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,.12), 0 4px 15px 0 rgba(0,0,0,.10);
   width: 36px;
   height: 36px;
   position: relative;
@@ -69,6 +96,16 @@
     height: 28px;
     transform: translate(4px, 4px);
   }
+  @include media-breakpoint-down(sm) {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem !important;
+    &::after {
+      width: 24px;
+      height: 24px;
+      transform: translate(3px, 3px);
+    }
+  }
 }
 
 
@@ -76,3 +113,4 @@
 .slick-arrow.slick-disabled {
   display: none !important;
 }
+
