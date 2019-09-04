@@ -1,55 +1,36 @@
 $(document).ready(function () {
-  //  $('.carousel').slick({
-  //   slidesToShow: 5,
-  //   centerMode: false,
-  //   focusOnSelect: true,
-  //   infinite: false,
-  //   initialSlide: 0,
-  //   dots: true,
-  //   arrows: true,
-  //   responsive: [{
-  //       breakpoint: 1600,
-  //       settings: {
-  //         slidesToShow: 4,
-  //         slidesToScroll: 1,
-  //         dots: true,
-  //         initialSlide: 0,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 1200,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 1,
-  //         initialSlide: 0,
-  //         dots: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 992,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         dots: true,
-  //         initialSlide: 0,
-  //         arrows: false,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         dots: true,
-  //         arrows: false,
-  //         initialSlide: 0,
-  //       }
-  //     }
-  //   ]
-  // });
-
 
   $("input[type='number']").inputSpinner();
+
+  $(".card input[type=number]").on('change paste keyup input', function () {
+    // get the value of the input element
+    var value = $(this).val();
+    // set the class depending on value
+    if (value > 0) {
+      $(this).parents('.card').addClass('selected');
+    } else {
+      $(this).parents('.card').removeClass('selected');
+    }
+  });
+
+  function changeInput(target, delta) {
+    // get the card of the given element
+    var card = $(target).parents('.card');
+    // get the input element
+    var input = card.find('input[type=number]');
+
+    // get the current value as integer
+    var value = parseInt("0" + input.val());
+    // get the borders
+    var min = input.attr('min');
+    var max = input.attr('max');
+    // add the delta and check the borders
+    value = Math.max(min, Math.min(max, value + delta));
+    // set the new value
+    input.val(value);
+    // trigger the changed event
+    input.trigger('change');
+  }
 
   $('[data-cardSelect]').click(function () {
     $(this).parent('[data-cardSelected]').toggleClass('selected');
