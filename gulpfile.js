@@ -118,11 +118,10 @@ gulp.task('scripts', function () {
 //
 gulp.task('copyVendors', function () {
     gulp.src([
-            './node_modules/*bootstrap-input-spinner/**/*',
-            './node_modules/*slick-carousel/**/*',
-            './node_modules/*swiper/**/*'
+            './src/assets/vendor/*bootstrap-input-spinner/src/bootstrap-input-spinner.js',
+            './src/assets/vendor/*swiper/dist/css/swiper.css',
+            './src/assets/vendor/*swiper/dist/js/swiper.min.js',
         ])
-        .pipe(gulp.dest('./src/assets/vendor/'))
         .pipe(gulp.dest('./dist/assets/vendor/'));
 });
 
