@@ -139,5 +139,5 @@ gulp.task('default', ['clean:dist', 'font', 'scripts', 'copyVendors', 'images', 
 // Creates production ready assets in dist folder
 gulp.task('build', function () {
     console.log('Building production ready assets');
-    runSequence('clean:dist', 'sass', ['scripts', 'copyVendors', 'images', 'font', 'compile-html'])
+    runSequence('clean:dist', 'sass', ['scripts', 'copyVendors', 'images', 'font', 'compile-html']);
 });
