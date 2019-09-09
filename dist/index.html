@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Quote Tool</title>
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.css">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+	  <div class="navbar bg-light border-bottom position-relative" style="height: 60px !important;">
+	
+	  </div>
+	  <div class="bg-light sticky-top border-bottom mb-3 px-4 py-2">
+	    <div class="container-fluid">
+	      <div class="row justify-content-between">
+	        <div class="col">
+	          <div class="dropdown">
+	            <button type="button" class="btn btn-xl btn-primary float-left dropdown-toggle d-none d-md-block"
+	              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+	                class="filters"></span>
+	              Filters
+	            </button>
+	
+	            <button type="button" class="btn btn-primary float-left dropdown-toggle d-md-none" id="dropdownMenuButton"
+	              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="filters"></span>
+	            </button>
+	
+	            <div class="dropdown-menu p-0 m-0 border-0">
+	              <form class="">
+	                <!--Accordion wrapper-->
+	                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+	                  <!-- Accordion card -->
+	                  <div class="card">
+	
+	                    <!-- Card header -->
+	                    <div class="card-header" role="tab" id="headingOne1">
+	                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+	                        aria-controls="collapseOne1">
+	                        <h5 class="mb-0">
+	                          Categories <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+	                        </h5>
+	                      </a>
+	                    </div>
+	
+	                    <!-- Card body -->
+	                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+	                      data-parent="#accordionEx">
+	                      <div class="p-4">
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch1">
+	                          <label class="custom-control-label" for="categoriesSwitch1">Category 1</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch2">
+	                          <label class="custom-control-label" for="categoriesSwitch2">Category 2</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch3">
+	                          <label class="custom-control-label" for="categoriesSwitch3">Category 3</label>
+	                        </div>
+	                      </div>
+	                    </div>
+	
+	                  </div>
+	                  <!-- Accordion card -->
+	
+	                  <!-- Accordion card -->
+	                  <div class="card">
+	
+	                    <!-- Card header -->
+	                    <div class="card-header" role="tab" id="headingTwo2">
+	                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="true"
+	                        aria-controls="collapseTwo2">
+	                        <h5 class="mb-0">
+	                          Filter 1 <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+	                        </h5>
+	                      </a>
+	                    </div>
+	
+	                    <!-- Card body -->
+	                    <div id="collapseTwo2" class="collapse " role="tabpanel" aria-labelledby="headingTwo2"
+	                      data-parent="#accordionEx">
+	                      <div class="p-4">
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch1">
+	                          <label class="custom-control-label" for="categoriesSwitch1">Filter 1</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch2">
+	                          <label class="custom-control-label" for="categoriesSwitch2">Filter 2</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch3">
+	                          <label class="custom-control-label" for="categoriesSwitch3">Filter 3</label>
+	                        </div>
+	                      </div>
+	                    </div>
+	
+	                  </div>
+	                  <!-- Accordion card -->
+	
+	                  <!-- Accordion card -->
+	                  <div class="card">
+	
+	                    <!-- Card header -->
+	                    <div class="card-header" role="tab" id="headingThree3">
+	                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="true"
+	                        aria-controls="collapseThree3">
+	                        <h5 class="mb-0">
+	                          Filter 2 <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+	                        </h5>
+	                      </a>
+	                    </div>
+	
+	                    <!-- Card body -->
+	                    <div id="collapseThree3" class="collapse " role="tabpanel" aria-labelledby="headingThree3"
+	                      data-parent="#accordionEx">
+	                      <div class="p-4">
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch1">
+	                          <label class="custom-control-label" for="categoriesSwitch1">Filter 1</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch2">
+	                          <label class="custom-control-label" for="categoriesSwitch2">Filter 2</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch3">
+	                          <label class="custom-control-label" for="categoriesSwitch3">Filter 3</label>
+	                        </div>
+	                      </div>
+	                    </div>
+	
+	                  </div>
+	                  <!-- Accordion card -->
+	
+	                  <!-- Accordion card -->
+	                  <div class="card">
+	
+	                    <!-- Card header -->
+	                    <div class="card-header" role="tab" id="headingFour4">
+	                      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4" aria-expanded="true"
+	                        aria-controls="collapseFour4">
+	                        <h5 class="mb-0">
+	                          Filter 3 <i class="float-right fa fa-caret-down" aria-hidden="true"></i>
+	                        </h5>
+	                      </a>
+	                    </div>
+	
+	                    <!-- Card body -->
+	                    <div id="collapseFour4" class="collapse " role="tabpanel" aria-labelledby="headingFour4"
+	                      data-parent="#accordionEx">
+	                      <div class="p-4">
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch1">
+	                          <label class="custom-control-label" for="categoriesSwitch1">Filter 1</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch2">
+	                          <label class="custom-control-label" for="categoriesSwitch2">Filter 2</label>
+	                        </div>
+	                        <div class="custom-control custom-switch mb-2">
+	                          <input type="checkbox" class="custom-control-input" id="categoriesSwitch3">
+	                          <label class="custom-control-label" for="categoriesSwitch3">Filter 3</label>
+	                        </div>
+	                      </div>
+	                    </div>
+	
+	                  </div>
+	                  <!-- Accordion card -->
+	                </div>
+	                <!-- Accordion wrapper -->
+	                <div class="dropdown-divider"></div>
+	                <div class="card">
+	                  <div class="container my-2">
+	                    <div class="row flex justify-content-center">
+	                      <div class="col-6">
+	                        <button type="reset" style="width: 100%;" class="btn btn-lg btn-primary">Reset</button>
+	                      </div>
+	                      <div class="col-6">
+	                        <button type="button" style="width: 100%;" class="btn btn-lg btn-outline-secondary"
+	                          data-dismiss="modal" data-toggle="dropdown">Close</button>
+	                      </div>
+	                    </div>
+	                  </div>
+	
+	                </div>
+	              </form>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col justify-content-end">
+	          <button type="button" class="btn btn-fixed btn-xl btn-primary float-right dropdown-toggle d-none d-md-block"
+	            data-toggle="modal" data-target="#priceModal">
+	            Total: <b>$2509</b>
+	          </button>
+	          <button type="button" class="btn btn-fixed btn-primary float-right dropdown-toggle d-md-none"
+	            data-toggle="modal" data-target="#priceModal">
+	            Total: <b>$2509</b>
+	          </button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+	<main role="main" class="container-fluid px-lg-5 px-md-5 px-sm-2 px-2 mb-5">
+		<!-- Modal -->
+		<div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="priceModalTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+				<div class="modal-content">
+
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="priceModalTitle">Price</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col p-0 m-0">
+									<div class="">
+										<table class="table table-sm table-borderless">
+											<thead>
+												<tr>
+													<th scope="col">Product</th>
+													<th scope="col">Quantity</th>
+													<th scope="col">Price</th>
+													<th scope="col">Discount</th>
+													<th scope="col">Total</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="5">
+														<div class="col-12 mb-3 mt-5">
+															<h4><span class="product"></span>Category 1</h4>
+														</div>
+													</td>
+												</tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr style="height: .5rem;"></tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr style="height: .5rem;"></tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr>
+													<td colspan="5">
+														<div class="col-12 mb-3 mt-5">
+															<h4><span class="product"></span>Category 1</h4>
+														</div>
+													</td>
+												</tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr style="height: .5rem;"></tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr style="height: .5rem;"></tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr>
+													<td colspan="5">
+														<div class="col-12 mb-3 mt-5">
+															<h4><span class="product"></span>Category 1</h4>
+														</div>
+													</td>
+												</tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr style="height: .5rem;"></tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+												<tr style="height: .5rem;"></tr>
+												<tr class="table-active">
+													<td>Product</td>
+													<td>5</td>
+													<td>100$</td>
+													<td>10%</td>
+													<td>3200$</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12">
+									<ul class="list-group mb-2">
+										<li class="list-group-item d-flex justify-content-between">
+											<span>Total (USD)</span>
+											<strong>$20</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal-footer">
+						<div class="container">
+							<div class="row mb-3">
+								<div class="col-12">
+									<label for="address">Address</label>
+									<input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+									<div class="invalid-feedback">
+										Please enter your shipping address.
+									</div>
+								</div>
+							</div>
+							<div class="row flex justify-content-center justify-content-md-end">
+								<button type="button" class="mr-3 btn btn-outline-secondary d-none d-md-block"
+									data-dismiss="modal">Close</button>
+
+
+								<button type="button" class="mr-3 btn btn-lg btn-primary d-none d-md-block"><span class="save"></span>
+									Save</button>
+								<button type="button" class="mr-3 btn btn-primary d-md-none"><span class="save"></span> Save</button>
+								<button type="button" class=" btn btn-lg btn-primary d-none d-md-block"><span class="send"></span>
+									Send</button>
+
+								<button type="button" class=" btn btn-primary d-md-none"><span class="send"></span> Send</button>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<section class="" id="categoryOne">
+			<div class="container-fluid">
+				<div class="row mt-4 mt-sm-4 mt-md-5 mt-lg-5">
+					<div class="col-12">
+						<h2 class="category mx-auto mx-sm-auto mx-md-0 mx-lg-0">Category 1</h2>
+					</div>
+				</div>
+			</div>
+		
+		
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 px-0">
+						<div class="swiper-container pt-2 pt-md-4">
+							<div class="swiper-wrapper">
+		
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card" id="select">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productOne" role="button" aria-expanded="false"
+												aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input type="number" id="changedInput" class="form-control-sm" value="0" min="0" max="1000"
+															step="1">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productTwo" role="button" aria-expanded="false"
+												aria-controls="productTwo"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productThree" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productFour" role="button" aria-expanded="false"
+												aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productFive" role="button" aria-expanded="false"
+												aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productSix" role="button" aria-expanded="false"
+												aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productSeven" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#productEight" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col-12 col-sm-4">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-12 col-sm-8 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+		
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+		
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+		
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container-fluid">
+				<div class="collapse" id="productOne" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productTwo" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productThree" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productFour" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productFive" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productSix" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productSeven" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="productEight" data-parent="#categoryOne">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</section>
+		
+		<section class="" id="categoryTwo">
+			<div class="container-fluid">
+				<div class="row pb-1 mt-4 mt-sm-4 mt-md-5 mt-lg-5">
+					<div class="col-12">
+						<h2 class="category mx-auto mx-sm-auto mx-md-0 mx-lg-0">Category 2</h2>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 px-0">
+						<div class="swiper-container pt-2 pt-md-4">
+							<div class="swiper-wrapper">
+		
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" data-target="" href="#product-One" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product-Two" role="button" aria-expanded="false"
+												aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product-Three" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product-Four" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product-Five" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product-Six" role="button" aria-expanded="false"
+												aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+		
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+		
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+		
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container-fluid">
+				<div class="collapse" id="product-One" data-parent="#categoryTwo">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product-Two" data-parent="#categoryTwo">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product-Three" data-parent="#categoryTwo">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product-Four" data-parent="#categoryTwo">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product-Five" data-parent="#categoryTwo">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product-Six" data-parent="#categoryTwo">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="" id="categoryThree">
+			<div class="container-fluid">
+				<div class="row mt-4 mt-sm-4 mt-md-5 mt-lg-5">
+					<div class="col-12">
+						<h2 class="category mx-auto mx-sm-auto mx-md-0 mx-lg-0">Category 3</h2>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 px-0">
+						<div class="swiper-container pt-2 pt-md-4">
+							<div class="swiper-wrapper">
+		
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" data-target="" href="#product--One" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product--Two" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product--Three" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product--Four" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product--Five" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="swiper-slide">
+									<div class="col-lg-12 mw-100 text-left px-1 px-sm-1 px-md-2 px-lg-2">
+										<div class="card">
+											<img src="assets/img/product-img.jpg"
+												class="card-img-top pt-lg-3 pt-md-2 px-lg-3 px-md-2 pt-2 px-2 pb-1" alt="...">
+											<a class="btn-floating" data-toggle="collapse" href="#product--Six" role="button"
+												aria-expanded="false" aria-controls="productOne"></a>
+											<div class="card-body pb-0 pb-sm-2 pb-md-2 pb-lg-2 px-2 px-md-4 px-lg-4">
+												<p class="mb-0 mb-sm-2">Title</p>
+												<p class="card-text d-none d-md-block">Some quick example text to build on the card title and make
+													up
+													the bulk
+													of the
+													card's content.</p>
+											</div>
+											<div class="card-body pt-0 px-2 px-md-4 px-lg-4 pb-2 pb-md-3 pb-lg-3">
+												<div class="row align-items-center">
+													<div class="col">
+														<p class="pb-0 mb-0">$3212</p>
+													</div>
+													<div class="col-lg-7 col-md-7 col-12 mt-2 mt-md-0 mt-lg-0">
+														<input class="form-control-sm" type="number" value="0" min="0" max="1000" step="1"
+															style="display: none;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+		
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+		
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+		
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container-fluid">
+				<div class="collapse" id="product--One" data-parent="#categoryThree">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product--Two" data-parent="#categoryThree">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product--Three" data-parent="#categoryThree">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product--Four" data-parent="#categoryThree">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product--Five" data-parent="#categoryThree">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-2.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="collapse" id="product--Six" data-parent="#categoryThree">
+					<div class="row mx-5 py-4">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="card">
+										<img src="assets/img/product-img-3.jpg" class="card-img-top p-4" alt="Product Images">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- <div id="mobile-nav" class="fixed-bottom d-md-none">
+	  <div class="container-fluid">
+	    <div class="row fixed-bottom bg-primary py-2">
+	      <div class="col-4 text-center px-0"><a href="#" class="text-white trigger-button">
+	          <span class="filters m-0"></span><br>Filters</a>
+	      </div>
+	      <div class="col-4 text-center px-0"><a href="#" class="text-white">
+	          <span class="home"></span><br>Home</a>
+	      </div>
+	      <div class="col-4 text-center px-0"><a href="#" class="text-white">
+	          <span class="next"></span><br>Next</a>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->	<footer class="footer mt-auto py-3 bg-light border-top" style="height: 80px"">
+	  <div class="container">
+	    <span class="text-muted"></span>
+	  </div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="assets/vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js">
+	</script>
+	<!-- <script type="text/javascript" src="assets/js/vendor/slick-carousel/slick/slick.js"></script> -->
+	<script type="text/javascript" src="assets/vendor/swiper/dist/js/swiper.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 5.35,
+			freeMode: true,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				dynamicBullets: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				1600: {
+					slidesPerView: 4.35,
+				},
+				1200: {
+					slidesPerView: 3.35,
+				},
+				992: {
+					slidesPerView: 2.35,
+				},
+				768: {
+					slidesPerView: 2.35,
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>
