@@ -47,7 +47,7 @@
     "handlebars": "^4.0.10",
     "jquery": "^3.2.1",
     "mappy-breakpoints": "^0.2.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.12.5",
     "sass": "^1.22.10",
     "swiper": "^4.5.0"
